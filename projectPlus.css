@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(180deg, #6185f5 0%, #d2dcfd 100%);
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 1fr);
+  grid-gap: 8px;
+  max-width: 1200px;
+  max-height: 80vh;
+  justify-content: center;
+}
+.day {
+  padding: 3vh 2vw;
+}
+.weekDay {
+  padding: 4vh 1vw 2vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(97, 133, 245, 0.3);
+  border-radius: 20px;
+  height: max-content;
+}
+.day {
+  background: rgba(97, 133, 245, 0.3);
+  border-radius: 20px;
+  height: max-content;
+  padding: 3vh 2vw;
+}
+.find {
+  display: flex;
+  margin: 0;
+  flex-direction: row-reverse;
+}
+.cityDate {
+  display: inline-block;
+}
+.cityDate .row {
+  margin: 0;
+}
+h1 {
+  line-height: 0.9em;
+  font-size: 64px;
+  white-space: nowrap;
+}
+h2 {
+  font-size: 24px;
+}
+.imgBox {
+  flex-direction: column;
+  flex-basis: 50%;
+  width: 50%;
+}
+.imgBox img {
+  width: 100%;
+  margin: auto 0;
+}
+.bigTemp {
+  flex-basis: 50%;
+  font-size: 132px;
+  margin: 0 0 auto 0;
+  line-height: 150px;
+}
+.row h2 {
+  flex-basis: 100%;
+  white-space: nowrap;
+  margin-bottom: 3vh;
+  line-height: 0.9em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+p {
+  font-size: 30px;
+}
+.rowIn {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  margin: 3vh auto 0;
+}
+
+/* Week */
+.weekDay h2 {
+  text-align: center;
+  margin: 3vh auto;
+  font-size: 32px;
+}
+.weekDay .imgBox {
+  width: 100%;
+  margin: 2vh 0;
+}
+waekDay img {
+  width: auto;
+}
+.weekDay .weekRows {
+  margin: 3vh 0 5vh;
+}
+.weekRows .row {
+  justify-content: center;
+  margin: 2vh 0;
+}
